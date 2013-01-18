@@ -38,7 +38,8 @@ public function index()
 
 ## Implementation
 1. Create the database table:
-```sql
+
+```
 CREATE TABLE IF NOT EXISTS `tbl_option` (
  
 `option_id` bigint(20) NOT NULL AUTO_INCREMENT,
@@ -55,4 +56,5 @@ UNIQUE KEY `option_name` (`option_name`)
  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=59 ;
 ```
+
 2. Place option_helper.php in application/helpers folder (in most cases). I haven’t used any model for simplicity.
