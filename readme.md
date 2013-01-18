@@ -8,7 +8,8 @@ This helper was made to mimic the tried-and-tested function of WordPress, the [O
 * _delete_option(‘name_of_option')_ will delete the option and return true/false on success/failure.
 
 ##Usage Example
-```public function index()
+```php
+public function index()
 {
     //load our helper,
     //better to autoload it by editing application/config/autoload.php
@@ -32,11 +33,13 @@ This helper was made to mimic the tried-and-tested function of WordPress, the [O
  
     delete_option('username');
     //delete_option('user_info');
-}```
+}
+```
 
 ## Implementation
 1. Create the database table:
-```CREATE TABLE IF NOT EXISTS `tbl_option` (
+```
+CREATE TABLE IF NOT EXISTS `tbl_option` (
  
 `option_id` bigint(20) NOT NULL AUTO_INCREMENT,
  
@@ -50,5 +53,6 @@ PRIMARY KEY (`option_id`),
  
 UNIQUE KEY `option_name` (`option_name`)
  
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=59 ;```
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=59 ;
+```
 2. Place option_helper.php in application/helpers folder (in most cases). I haven’t used any model for simplicity.
