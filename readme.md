@@ -38,7 +38,7 @@ public function index()
 
 ## Implementation
 1. Create the database table:
-```
+```sql
 CREATE TABLE IF NOT EXISTS `tbl_option` (
  
 `option_id` bigint(20) NOT NULL AUTO_INCREMENT,
