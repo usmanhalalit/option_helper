@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /*  
-Opions Helper for CodeIgniter
+Options Helper for CodeIgniter
 
 Doc: http://usman.it/wordpress-like-option-feature-for-your-codeigniter-application/
 
